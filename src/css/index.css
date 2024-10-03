@@ -1,0 +1,38 @@
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+form{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-box{
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+
+[data-castom-buttom="castom-button-select-file"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(19, 109, 112);
+}
+
+.button-select-file{
+    text-align: center;
+    align-content: center;
+    color: #fff;
+}
+
+input[type="file"]{
+    opacity: 0;
+}
