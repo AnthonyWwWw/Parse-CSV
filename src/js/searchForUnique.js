@@ -1,14 +1,21 @@
-export function searchForUnique(massKey1, massKey2) {
-    const uniqueValues = [];
+export function searchForUnique(arrayOfObjects1, arrayOfObjects2) {
+    const valuesArray1 = convertObjectsToValuesArray(arrayOfObjects1);
+    const valuesArray2 = convertObjectsToValuesArray(arrayOfObjects2);
 
-    for (const key1 of massKey1) {
-        const found = massKey2.find(item => item === key1);
-        
-        if (found !== undefined) {
-            uniqueValues.push(found);
-        }
+    const onlyInArray1 = valuesArray1.filter(value => !valuesArray2.includes(value));
+    const onlyInArray2 = valuesArray2.filter(value => !valuesArray1.includes(value));
+
+    const uniqueValues = [onlyInArray1, onlyInArray2];
+    console.log(uniqueValues);
+}
+
+function convertObjectsToValuesArray(arrayOfObjects) {
+    const allValues = [];
+
+    for (const obj of arrayOfObjects) {
+        const values = Object.values(obj); 
+        allValues.push(...values); 
     }
 
-    console.log(uniqueValues);
-    return uniqueValues;
+    return allValues;
 }

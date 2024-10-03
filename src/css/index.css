@@ -1,38 +1,58 @@
 .main{
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
 }
 
+.main__content{
+    margin-top: 70px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
 form{
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
 }
 
-.input-box{
-    position: relative;
-    padding: 20px;
+.button-to-compare-castom{
     width: 200px;
-    height: 200px;
+    height: 50px;
+    background-color: #0E46A3;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
+.button-to-compare-castom:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #347928;
+}
 
-[data-castom-buttom="castom-button-select-file"]{
+.dialog-box-conteiner{
+    transition-duration: 2s;
+    transition-property: all;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 70px;
+    top: -100%;
+}
+
+.dialog-box-content{
+    background-color: #00712D;
+    width: 860px;
+    height: 30px;
     border-radius: 20px;
-    background-color: rgb(19, 109, 112);
 }
 
-.button-select-file{
-    text-align: center;
-    align-content: center;
-    color: #fff;
+.active{
+    transition-duration: 0.5s;
+    transition-property: all;
+    top: 20px;
 }
 
-input[type="file"]{
-    opacity: 0;
+.active-error{
+    transition-duration: 0.5s;
+    transition-property: all;
+    top: 20px;
 }
+

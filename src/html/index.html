@@ -12,15 +12,21 @@
         <div class="main__content">
             <form action="#">
                 <div class="input-box">
-                    <label for="select-file" class="button-select-file" data-castom-buttom="castom-button-select-file">Вибрати файл</label>
-                    <input type="file" accept="cvg" id="file-input-1" class="input-select-file" name="select-file" data-castom-buttom="castom-button-select-file">
+                    <label for="file-input-1" class="button-select-file" data-custom-button="custom-button-select-file">Вибрати файл</label>
+                    <input type="file" accept=".csv" id="file-input-1" class="input-select-file" name="select-file-1" data-custom-button="custom-button-select-file">
                 </div>
                 <div class="input-box">
-                    <label for="select-file" class="button-select-file" data-castom-buttom="castom-button-select-file">Вибрати файл</label>
-                    <input type="file" accept="cvg" id="file-input-2" class="input-select-file" name="select-file" data-castom-buttom="castom-button-select-file">
+                    <label for="file-input-2" class="button-select-file" data-custom-button="custom-button-select-file">Вибрати файл</label>
+                    <input type="file" accept=".csv" id="file-input-2" class="input-select-file" name="select-file-2" data-custom-button="custom-button-select-file">
                 </div>
-                <button type="button" id="buttom-to-compare">Порівняти</button>
+                <button type="button" id="button-to-compare" class="button-to-compare-castom">Порівняти</button>
             </form>
+
+            <div class="dialog-box-conteiner" id="alert-box">
+                <div class="dialog-box-content">
+                   
+                </div>
+            </div>
         </div>
     </main>
 
